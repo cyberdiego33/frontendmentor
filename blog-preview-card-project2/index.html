@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+    * {
+      margin: 0;
+      border-radius: 10px;
+    }
+    html {
+      font-family: figtree;
+    }
+    body {
+      height: 100%;
+      margin: 0;
+      justify-items: center;
+      padding-top: 10%;
+      background-color: hsl(47, 88%, 63%);
+    }
+    .container {
+      max-width: auto;
+      background-color: white;
+      padding: 20px;
+      border: 1.4px solid;
+      box-shadow: 7px 7px;
+    }
+    img#blog-image{
+      display: block;
+      width: 300px;
+      padding-bottom: 10px;
+    }
+    .learning {
+      display: inline-block;
+      padding: 5px;
+      background-color: hsl(47, 88%, 63%);
+      border-radius: 5px;
+    }
+    p {
+      padding: 10px 0;
+    }
+    h4 {
+      font-weight: bold;
+      padding: 10px 0;
+    }
+    h4 + span {
+      color: #928b8b;
+      font-size: 14px;
+    }
+    .image-div {
+    display: flex;
+    align-items: center; /* Vertically center items */
+    gap: 8px; /* Add space between the image and the text */
+    padding: 10px 0;
+}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <img id="blog-image" src="blogcard.png" alt="blogcard image">
+    <span class="learning">Learning</span>
+    <p>Published 21 Dec 2023</p>
+    <h4>HTML & CSS FOUNDATION</h4>
+    <span>These languages are the backbone of every <br>website, defining structure, content and <br>presentation</span>
+    <div class="image-div">
+      <img src="image-avatar.webp" alt="" width="30">
+      <p>Greg Hopper</p>
+    </div>
+  </div>
+</body>
+</html>
